@@ -1,2 +1,1 @@
-# lista-presentes-casamento
-Lista de presentes.
+# Página Web para apresentar opções de presentes de casamento ^^
