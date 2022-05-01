@@ -80,7 +80,9 @@ header{
 
 header.scrolled{
     background-color: var(--bg-color-transparent);
-    /* background-color: #A6BDA9; */
+    /* background-color: #4ad9b0; */
+    /* background-color: #6EE1C1; */
+    background-color: #addccf;
     box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
 }
 
@@ -116,7 +118,7 @@ header .logo-img{
     font-size: 1rem;
     letter-spacing: 0.5px;
     /* color: var(--text-color); */
-    color: black;
+    color: #192617;
     font-weight: 500;
     opacity: 0.9; 
 }
@@ -173,17 +175,29 @@ main {
 }
 
 .pro {
-    width: 16%;
-    min-height: 250px;
-    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17%;
+    min-height: 320px;
+    padding: 12px 15px;
     border-radius: 5px;
-    border: 1px solid #000;
+    border: 1px solid #192617;
     cursor: pointer;
     transition: 0.5s;
 }
 
+.pro:hover {
+    background-color: #ADDCCF;
+}
+
+.des {
+    color: #192617;
+}
+
 .pro img {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .main-content {
@@ -198,5 +212,6 @@ main {
 }
 
 .home-text p {
-    color: rgb(61, 85, 12);
+    /* color: rgb(61, 85, 12); */
+    color: #192617;
 }
