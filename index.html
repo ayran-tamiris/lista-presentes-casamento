@@ -7,12 +7,17 @@
     <title>Lista de Presentes</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/8a122943d6.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js" defer></script>
 </head>
 <body>
     <header class="scrolled">
-        <nav class="container">
+        <nav class="container" id="nav">
             <a href="#"><img class="logo-img" src="./assets/img/casamento-logo.png" alt=""></a>
             <div class="links">
+                <button id="btn-menu">
+                    <span id="hamburguer"></span>
+                </button>
                 <ul>
                     <li>
                         <a href="./index.html" class="nav-link">Home</a>
@@ -21,21 +26,30 @@
                         <a href="./eletroportateis.html" class="nav-link">Eletroportáteis</a>
                     </li>
                     <li>
-                        <a href="./utilitarios.html" class="nav-link">Utilitários</a>
+                        <a href="./utilitarios.html" class="nav-link">Utilidades</a>
                     </li>
                     <li>
                         <a href="./outros.html" class="nav-link">Cama, mesa e banho</a>
+                    </li>
+                    <li>
+                        <a href="./dados.html" class="nav-link">Dados bancários</a>
                     </li>
                 </ul>             
             </div>
         </nav>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" style="height: 100vh">
         <div class="home-text">
             <p>Querido convidado seja bem-vindo a nossa lista de presentes.</p>
             <p>Pensamos em tudo com muito carinho para que você se sinta feliz para nos presentear com o que sentir vontade.</p>
         </div>
     </main>
+
+    <footer>
+        <p>”Melhor é serem dois do que um. Porque, se um cair, o outro levanta o seu companheiro;</p>
+        <p>e o cordão de três dobras não se quebra facilmente”.</p>
+        <p>Eclesiastes <span style="font-size: 1.3rem;">4:9, 10 e 12</span></p>
+    </footer>
 </body>
 </html>

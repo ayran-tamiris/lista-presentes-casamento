@@ -1,25 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
-/* -------- Website Theme ------- */
-
-:root {
-    --hue-1: 257;
-    --hue-2: 47;
-    --bg-color: hsl(var(--hue-1), 100%, 97%);
-    --main-color-1: hsl(var(--hue-1), 100%, 60%); 
-    --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
-    --main-color-2: hsl(var(--hue-2), 100%, 61%);
-    --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
-    --bg-color-1: hsl(var(--hue-1), 100%, 97%);
-    --bg-color-2: #fff;
-    --bg-color-3: hsl(var(--hue-1), 100%, 98%);
-    --bg-color-transparent: rgba(255, 255, 255, 0.6);
-    --bg-color-green: rgb(61, 85, 12);
-    --heading-color: hsl(var(--hue-1), 61%, 24%);
-    --text-color: hsl(var(--hue-1), 17%, 63%);
-}
 
 *, *::before, *::after{
     padding: 0;
@@ -79,9 +58,6 @@ header{
 }
 
 header.scrolled{
-    background-color: var(--bg-color-transparent);
-    /* background-color: #4ad9b0; */
-    /* background-color: #6EE1C1; */
     background-color: #addccf;
     box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
 }
@@ -110,14 +86,17 @@ header .logo-img{
     width: 100%;
 }
 
+#btn-menu{
+    display: none;
+}
+
 .nav-link{
     position: relative;
     display: inline-block;
     margin: 0 1rem;
-    text-transform: uppercase;
-    font-size: 1rem;
+    /* text-transform: uppercase; */
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
-    /* color: var(--text-color); */
     color: #192617;
     font-weight: 500;
     opacity: 0.9; 
@@ -129,8 +108,7 @@ header .logo-img{
     width: 0%;
     height: 10px;
     border-radius: 5px;
-    /* background-color: var(--bg-color-green); */
-    background-color: var(--bg-color-green);
+    background-color: rgb(61, 85, 12);
     bottom: 0;
     left: -5px;
     z-index: -1;
@@ -203,15 +181,149 @@ main {
 .main-content {
     height: calc(100vh - 136px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.home-text {
-    text-align: center;
+.main-content p {
+    font-size: 2rem;
+}
+
+.home-text{
+    margin-bottom: 30px;
 }
 
 .home-text p {
-    /* color: rgb(61, 85, 12); */
     color: #192617;
+    text-align: center;
+}
+
+section {
+    flex-direction: column;
+    display: flex;
+    height: calc(100vh - 170px);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#pix {
+    font-size: 40rem;
+    position: absolute;
+    z-index: -1;
+    color: rgba(173, 220, 207);
+    opacity: 0.38;
+}
+
+#pix-descricao {
+    font-size: 3rem;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color:rgb(173, 220, 207);
+    box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+@media ( max-width: 800px ) { 
+    
+    .container {
+        justify-content: space-around ;
+    }
+    
+    .pro-container{
+        flex-wrap: wrap;
+    }
+
+    .pro{
+        width: 100%;
+    }
+
+    #btn-menu{
+        display: flex;
+        cursor: pointer;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+    }
+
+    #hamburguer{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav ul{
+        display: block;
+        height: 0;
+        position: absolute;
+        width: 100%;
+        top: 110px;
+        right: 0;
+        background: #ADDCCF;
+        transition: 0.6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active ul{
+        height: calc(100vh - 110px);
+        visibility: visible;
+    }
+
+    #nav ul a {
+        padding: 1rem;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        width: 89%;
+    }
+
+    #pix {
+        font-size: 25rem;
+        position: absolute;
+        z-index: -1;
+        color: rgba(173, 220, 207);
+        opacity: 0.38;
+    }
+
+    #pix-descricao {
+        font-size: 2rem;
+    }
+
+    .main-content p {
+        font-size: 1.6rem;
+    }
 }
