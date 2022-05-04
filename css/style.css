@@ -237,6 +237,10 @@ span {
     color: black;
 }
 
+#main-outros {
+    height: 100vh;
+}
+
 @media ( max-width: 800px ) { 
     
     .container {
@@ -329,5 +333,9 @@ span {
 
     .main-content p {
         font-size: 1.6rem;
+    }
+
+    #main-outros{
+        height: 1300px;   
     }
 }
