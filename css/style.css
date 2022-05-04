@@ -1,4 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/* -------- Website Theme ------- */
+
+:root {
+    --hue-1: 257;
+    --hue-2: 47;
+    --bg-color: hsl(var(--hue-1), 100%, 97%);
+    --main-color-1: hsl(var(--hue-1), 100%, 60%); 
+    --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
+    --main-color-2: hsl(var(--hue-2), 100%, 61%);
+    --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
+    --bg-color-1: hsl(var(--hue-1), 100%, 97%);
+    --bg-color-2: #fff;
+    --bg-color-3: hsl(var(--hue-1), 100%, 98%);
+    --bg-color-transparent: rgba(255, 255, 255, 0.6);
+    --bg-color-green: rgb(61, 85, 12);
+    --heading-color: hsl(var(--hue-1), 61%, 24%);
+    --text-color: hsl(var(--hue-1), 17%, 63%);
+}
 
 *, *::before, *::after{
     padding: 0;
@@ -58,6 +79,9 @@ header{
 }
 
 header.scrolled{
+    background-color: var(--bg-color-transparent);
+    /* background-color: #4ad9b0; */
+    /* background-color: #6EE1C1; */
     background-color: #addccf;
     box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
 }
@@ -90,9 +114,10 @@ header .logo-img{
     position: relative;
     display: inline-block;
     margin: 0 1rem;
-    /* text-transform: uppercase; */
-    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
     letter-spacing: 0.5px;
+    /* color: var(--text-color); */
     color: #192617;
     font-weight: 500;
     opacity: 0.9; 
@@ -104,7 +129,8 @@ header .logo-img{
     width: 0%;
     height: 10px;
     border-radius: 5px;
-    background-color: rgb(61, 85, 12);
+    /* background-color: var(--bg-color-green); */
+    background-color: var(--bg-color-green);
     bottom: 0;
     left: -5px;
     z-index: -1;
@@ -181,11 +207,11 @@ main {
     align-items: center;
 }
 
-.home-text p {
-    color: #192617;
+.home-text {
     text-align: center;
 }
 
-@media ( max-width: 800px ) { 
-    
+.home-text p {
+    /* color: rgb(61, 85, 12); */
+    color: #192617;
 }
