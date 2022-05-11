@@ -11,3 +11,11 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+let produtos = document.getElementsByClassName("pro");
+
+[].forEach.call(produtos, (el) => {
+    el.addEventListener('click', (() => {
+        alert('Queridos amigos e familiares, \nAo realizar a compra do item, pedimos por gentileza que comunique aos noivos, para que o produto seja removido da lista.');
+    }));
+});
