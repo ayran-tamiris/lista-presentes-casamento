@@ -251,9 +251,23 @@ footer span {
   height: 100vh;
 }
 
+.address {
+  text-align: center; 
+  font-size: 2rem;
+  font-style: bold;
+}
+
 @media (max-width: 800px) {
   .container {
     justify-content: space-around;
+  }
+
+  .address {
+    font-size: 1.5rem;
+  }
+
+  .section-dados {
+    padding: 1rem;
   }
 
   #home-content{
