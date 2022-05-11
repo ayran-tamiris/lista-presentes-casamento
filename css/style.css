@@ -240,7 +240,7 @@ footer p {
 }
 
 span {
-  color: black;
+  color: black !important;
 }
 
 footer span {
@@ -260,6 +260,14 @@ footer span {
 @media (max-width: 800px) {
   .container {
     justify-content: space-around;
+  }
+
+  #cep{
+    display: block;
+  }
+
+  #barra-dados{
+    visibility: hidden;
   }
 
   .address {
