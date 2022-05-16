@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script&display=swap');
 
 *,
 *::before,
@@ -240,7 +241,7 @@ footer p {
 }
 
 span {
-  color: black !important;
+  color: black;
 }
 
 footer span {
@@ -257,18 +258,26 @@ footer span {
   font-style: bold;
 }
 
+.sugestivo {
+  font-size: 32px;
+  color: #9C2A32;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+}
+
+.div-sugestivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
 @media (max-width: 800px) {
   .container {
     justify-content: space-around;
   }
 
-  #cep{
-    display: block;
-  }
-
-  #barra-dados{
-    visibility: hidden;
-  }
+  
 
   .address {
     font-size: 1.5rem;
