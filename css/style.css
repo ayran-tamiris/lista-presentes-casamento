@@ -263,13 +263,17 @@ footer span {
   color: #9C2A32;
   font-family: 'Dancing Script', cursive;
   font-weight: 600;
+  text-align: center;
 }
 
 .div-sugestivo {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 50px;
+  text-align:center;
+  padding: 10px;
 }
 
 @media (max-width: 800px) {
