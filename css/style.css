@@ -191,6 +191,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(/assets/img/foto.jpeg);
+  /* background-repeat: no-repeat; */
+  /* filter: grayscale(100%); */
+  background-position: center;
+  background-size: 430px;
 }
 
 .main-content p {
@@ -280,8 +285,6 @@ footer span {
   .container {
     justify-content: space-around;
   }
-
-  
 
   .address {
     font-size: 1.5rem;
@@ -386,5 +389,10 @@ footer span {
 
   #main-outros {
     height: 1300px;
+  }
+
+  .main-content {
+    background-repeat: no-repeat;
+    background-size:550px;
   }
 }
