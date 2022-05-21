@@ -281,7 +281,16 @@ footer span {
   padding: 10px;
 }
 
+#main-utilitarios {
+  height: 70vh;
+}
+
 @media (max-width: 800px) {
+
+  #main-utilitarios {
+    height: auto;
+  }
+
   .container {
     justify-content: space-around;
   }
